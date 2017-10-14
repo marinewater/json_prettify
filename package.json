@@ -1,0 +1,31 @@
+{
+  "name": "json_prettify",
+  "version": "1.0.0",
+  "description": "Takes javascript objects in any notation and converts them to proper JSON with indendation.",
+  "main": "index.js",
+  "scripts": {
+    "build": "./node_modules/typescript/bin/tsc",
+    "test": "./node_modules/mocha/bin/_mocha --ui bdd --recursive ./test",
+    "start": "node ./index.js"
+  },
+  "engines": {
+    "node": ">=7"
+  },
+  "engineStrict": true,
+  "author": "marinewater",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/chai": "^4.0.4",
+    "@types/mocha": "^2.2.43",
+    "@types/node": "^8.0.34",
+    "@types/yargs": "^8.0.2",
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1",
+    "mock-stdin": "^0.3.1",
+    "std-mocks": "^1.0.1",
+    "typescript": "^2.5.3"
+  },
+  "dependencies": {
+    "yargs": "^9.0.1"
+  }
+}
