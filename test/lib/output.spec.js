@@ -24,7 +24,7 @@ describe('Output', function () {
         it('should write to stdout', async function () {
             const output = new output_1.Output('{"test": "case"}');
             await output.write();
-            chai_1.assert.strictEqual(stdMocks.flush(), '{"test": "case"}');
+            chai_1.assert.strictEqual(stdMocks.flush().stdout[0], '{"test": "case"}');
         });
     });
 });

@@ -39,7 +39,7 @@ describe( 'Output', function () {
             const output = new Output( '{"test": "case"}' );
             await output.write();
 
-            assert.strictEqual( stdMocks.flush(), '{"test": "case"}' );
+            assert.strictEqual( stdMocks.flush().stdout[ 0 ], '{"test": "case"}' );
 
         });
 

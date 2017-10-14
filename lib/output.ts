@@ -45,7 +45,6 @@ export class Output {
     private writeToStdout(): void {
 
         process.stdout.write( this._output_data );
-        process.stdout.end();
 
     }
 
