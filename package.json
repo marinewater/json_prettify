@@ -1,6 +1,6 @@
 {
   "name": "json_prettify",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Takes javascript objects in any notation and converts them to proper JSON with indendation.",
   "main": "index.js",
   "repository": "https://github.com/marinewater/json_prettify",
