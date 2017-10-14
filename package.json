@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Takes javascript objects in any notation and converts them to proper JSON with indendation.",
   "main": "index.js",
+  "repository": "https://github.com/marinewater/json_prettify",
   "scripts": {
     "build": "./node_modules/typescript/bin/tsc",
     "test": "./node_modules/mocha/bin/_mocha --ui bdd --recursive ./test",
