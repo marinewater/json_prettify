@@ -19,3 +19,4 @@ describe('jsonPrettify', function () {
         chai_1.assert.throws(() => json_prettify_1.jsonPrettify('{test: \'case\''), SyntaxError);
     });
 });
+//# sourceMappingURL=json_prettify.spec.js.map

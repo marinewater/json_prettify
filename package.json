@@ -7,7 +7,8 @@
   "preferGlobal": true,
   "scripts": {
     "build": "./node_modules/typescript/bin/tsc",
-    "test": "./node_modules/mocha/bin/_mocha --ui bdd --recursive ./test",
+    "test": "nyc ./node_modules/mocha/bin/_mocha --ui bdd --recursive ./test",
+    "posttest": "nyc report --reporter=json && codecov -f coverage/*.json",
     "start": "node ./index.js"
   },
   "engines": {
@@ -25,8 +26,10 @@
     "@types/node": "^8.0.34",
     "@types/yargs": "^8.0.2",
     "chai": "^4.1.2",
+    "codecov": "^2.3.1",
     "mocha": "^4.0.1",
     "mock-stdin": "^0.3.1",
+    "nyc": "^11.2.1",
     "std-mocks": "^1.0.1",
     "typescript": "^2.5.3"
   },
