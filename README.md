@@ -2,6 +2,8 @@
 [![codecov](https://codecov.io/gh/marinewater/json_prettify/branch/master/graph/badge.svg)](https://codecov.io/gh/marinewater/json_prettify)
 
 # json_prettify
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/marinewater/json_prettify.svg)](https://greenkeeper.io/)
 Takes javascript objects in any notation and converts them to proper JSON with indendation.
 
 ## Installation
