@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/marinewater/json_prettify.svg?branch=master)](https://travis-ci.org/marinewater/json_prettify)
+
 # json_prettify
 Takes javascript objects in any notation and converts them to proper JSON with indendation.
 
