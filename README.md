@@ -1,9 +1,12 @@
-[![Build Status](https://travis-ci.org/marinewater/json_prettify.svg?branch=master)](https://travis-ci.org/marinewater/json_prettify)
-[![codecov](https://codecov.io/gh/marinewater/json_prettify/branch/master/graph/badge.svg)](https://codecov.io/gh/marinewater/json_prettify)
-
 # json_prettify
 
+[![npm version](https://img.shields.io/npm/v/json_prettify.svg)](https://www.npmjs.com/package/json_prettify)
+[![Build Status](https://travis-ci.org/marinewater/json_prettify.svg?branch=master)](https://travis-ci.org/marinewater/json_prettify)
+[![codecov](https://codecov.io/gh/marinewater/json_prettify/branch/master/graph/badge.svg)](https://codecov.io/gh/marinewater/json_prettify)
+[![License](https://img.shields.io/github/license/marinewater/json_prettify.svg)](https://github.com/marinewater/json_prettify/blob/master/LICENSE)
+![node](https://img.shields.io/node/v/json_prettify.svg)
 [![Greenkeeper badge](https://badges.greenkeeper.io/marinewater/json_prettify.svg)](https://greenkeeper.io/)
+
 Takes javascript objects in any notation and converts them to proper JSON with indendation.
 
 ## Installation
