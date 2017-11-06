@@ -1,8 +1,8 @@
+import * as bluebird from 'bluebird';
 import * as fs from 'fs';
 import * as process from 'process';
-import * as util from "util";
 
-const writeFileAsync = util.promisify( fs.writeFile );
+const writeFileAsync = bluebird.promisify( fs.writeFile );
 
 
 /**
@@ -52,7 +52,7 @@ export class Output {
      * write to file
      * @returns {Promise<void>}
      */
-    private async writeToFile(): Promise<void> {
+    private async writeToFile(): Promise<{}> {
 
         return writeFileAsync( this._file, this._output_data );
 

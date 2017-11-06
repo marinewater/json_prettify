@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const chai_1 = require("chai");
-const json_prettify_1 = require("../../lib/json_prettify");
+var chai_1 = require("chai");
+var json_prettify_1 = require("../../lib/json_prettify");
 describe('jsonPrettify', function () {
     it('should prettify a javascript object with default indentation', function () {
         chai_1.assert.strictEqual(json_prettify_1.jsonPrettify('{test: \'case\'}'), '{\n    "test": "case"\n}');
@@ -16,7 +16,7 @@ describe('jsonPrettify', function () {
         chai_1.assert.strictEqual(json_prettify_1.jsonPrettify('{"test": "case"}'), '{\n    "test": "case"\n}');
     });
     it('should throw a SyntaxError for invalid JSON', function () {
-        chai_1.assert.throws(() => json_prettify_1.jsonPrettify('{test: \'case\''), SyntaxError);
+        chai_1.assert.throws(function () { return json_prettify_1.jsonPrettify('{test: \'case\''); }, SyntaxError);
     });
 });
 //# sourceMappingURL=json_prettify.spec.js.map

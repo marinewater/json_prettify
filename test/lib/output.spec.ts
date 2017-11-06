@@ -1,10 +1,10 @@
+import * as bluebird from 'bluebird';
 import { assert } from 'chai';
 import * as fs from 'fs';
-import * as util from "util";
 const stdMocks = require( 'std-mocks' );
 import { Output } from '../../lib/output';
 
-const readFileAsync = util.promisify( fs.readFile );
+const readFileAsync = bluebird.promisify( fs.readFile );
 
 describe( 'Output', function () {
 
