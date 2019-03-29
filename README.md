@@ -1,7 +1,7 @@
 # json_prettify
 
 [![npm version](https://img.shields.io/npm/v/json_prettify.svg)](https://www.npmjs.com/package/json_prettify)
-[![Build Status](https://travis-ci.org/marinewater/json_prettify.svg?branch=master)](https://travis-ci.org/marinewater/json_prettify)
+![Gitlab pipeline status (branch)](https://img.shields.io/gitlab/pipeline/marinewater/json_prettify/master.svg?style=flat-square)
 [![codecov](https://codecov.io/gh/marinewater/json_prettify/branch/master/graph/badge.svg)](https://codecov.io/gh/marinewater/json_prettify)
 [![License](https://img.shields.io/github/license/marinewater/json_prettify.svg)](https://github.com/marinewater/json_prettify/blob/master/LICENSE)
 ![node](https://img.shields.io/node/v/json_prettify.svg)
