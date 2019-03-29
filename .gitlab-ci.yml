@@ -1,0 +1,51 @@
+stages:
+  - build
+  - test
+
+build:
+  image: node:11.12.0
+  stage: build
+  before_script:
+    - npm install
+  script:
+    - npm run build
+  cache:
+    paths:
+      - lib/*.js
+      - lib/*.js.map
+      - test/lib/*.js
+      - test/lib/*.js.map
+      - ./*.js
+      - ./*.js.map
+
+test_node11:
+  image: node:11
+  stage: test
+  before_script:
+    - npm install
+  script:
+    - npm run test
+
+test_node10:
+  image: node:10
+  stage: test
+  before_script:
+    - npm install
+  script:
+    - npm run test
+
+test_node8:
+  image: node:8
+  stage: test
+  before_script:
+    - npm install
+  script:
+    - npm run test
+
+test_node6:
+  image: node:6
+  stage: test
+  before_script:
+    - npm install
+  script:
+    - npm run test
