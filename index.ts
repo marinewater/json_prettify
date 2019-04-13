@@ -20,7 +20,9 @@ async function main(): Promise<void> {
     const input = new Input( argv._.length > 0 ? argv._[ 0 ] : null );
     const json = await input.read();
 
-    const output = new Output( jsonPrettify( json, argv.spaces ), argv.out );
+    const spaces = parseInt( argv.spaces as string, 10 );
+
+    const output = new Output( jsonPrettify( json, spaces ), argv.out as string );
     await output.write();
 
 }

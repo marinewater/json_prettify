@@ -54,7 +54,7 @@ export class Output {
      */
     private async writeToFile(): Promise<{}> {
 
-        return writeFileAsync( this._file, this._output_data );
+        return writeFileAsync( this._file, this._output_data, null );
 
     }
 
