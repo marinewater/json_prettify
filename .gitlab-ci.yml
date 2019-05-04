@@ -3,7 +3,7 @@ stages:
   - test
 
 build:
-  image: node:11.15.0
+  image: node:12.1.0
   stage: build
   before_script:
     - npm install
