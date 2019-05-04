@@ -8,7 +8,7 @@
   "scripts": {
     "build": "./node_modules/typescript/bin/tsc",
     "test": "nyc ./node_modules/mocha/bin/_mocha --ui bdd --recursive ./test",
-    "posttest": "nyc report --reporter=json && codecov -f coverage/*.json",
+    "report-coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
     "start": "node ./index.js"
   },
   "engines": {
