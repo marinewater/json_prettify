@@ -36,6 +36,6 @@
   },
   "dependencies": {
     "bluebird": "^3.5.4",
-    "yargs": "^13.2.2"
+    "yargs": "^13.2.4"
   }
 }
