@@ -63,7 +63,7 @@ export class Output {
      */
     private async writeToFile(): Promise<{}> {
 
-        return writeFileAsync( this._file, this._output_data, null );
+        return writeFileAsync( this._file, this._output_data );
 
     }
 
