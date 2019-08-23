@@ -1,9 +1,10 @@
 stages:
   - build
   - test
+  - publish
 
 build:
-  image: node:12.1.0
+  image: node:12.9.0
   stage: build
   before_script:
     - npm install
@@ -65,3 +66,13 @@ test_node8:
     key: ${CI_COMMIT_REF_SLUG}-node8
     paths:
       - node_modules/
+
+publish:
+  image: node:12.9.0
+  stage: publish
+  dependencies:
+    - build
+  only:
+    - tags
+  script:
+    - npm publish
