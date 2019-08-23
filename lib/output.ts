@@ -26,7 +26,6 @@ export class Output {
 
     /**
      * write to file/stdout
-     * @returns {Promise<void>}
      */
     async write(): Promise<void> {
 
@@ -61,7 +60,6 @@ export class Output {
 
     /**
      * write to file
-     * @returns {Promise<void>}
      */
     private async writeToFile(): Promise<{}> {
 

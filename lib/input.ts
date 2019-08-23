@@ -38,7 +38,6 @@ export class Input {
 
     /**
      * read from file
-     * @returns {Promise<void>}
      */
     private getFileInput(): Promise<void> {
 
@@ -71,7 +70,6 @@ export class Input {
 
     /**
      * read from stdin
-     * @returns {Promise<void>}
      */
     private getStdInput(): Promise<void> {
 
