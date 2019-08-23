@@ -26,18 +26,6 @@ test_node12:
     paths:
       - node_modules/
 
-test_node11:
-  image: node:11
-  stage: test
-  before_script:
-    - npm install
-  script:
-    - npm run test
-  cache:
-    key: ${CI_COMMIT_REF_SLUG}-node11
-    paths:
-      - node_modules/
-
 test_node10:
   image: node:10
   stage: test
