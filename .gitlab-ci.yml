@@ -10,13 +10,9 @@ build:
   script:
     - npm run build
   cache:
+    key: ${CI_COMMIT_REF_SLUG}
     paths:
-      - lib/*.js
-      - lib/*.js.map
-      - test/lib/*.js
-      - test/lib/*.js.map
-      - ./*.js
-      - ./*.js.map
+      - node_modules/
 
 test_node12:
   image: node:12
@@ -25,6 +21,10 @@ test_node12:
     - npm install
   script:
     - npm run test
+  cache:
+    key: ${CI_COMMIT_REF_SLUG}-node12
+    paths:
+      - node_modules/
 
 test_node11:
   image: node:11
@@ -33,6 +33,10 @@ test_node11:
     - npm install
   script:
     - npm run test
+  cache:
+    key: ${CI_COMMIT_REF_SLUG}-node11
+    paths:
+      - node_modules/
 
 test_node10:
   image: node:10
@@ -41,6 +45,10 @@ test_node10:
     - npm install
   script:
     - npm run test
+  cache:
+    key: ${CI_COMMIT_REF_SLUG}-node10
+    paths:
+      - node_modules/
 
 test_node8:
   image: node:8
@@ -49,3 +57,7 @@ test_node8:
     - npm install
   script:
     - npm run test
+  cache:
+    key: ${CI_COMMIT_REF_SLUG}-node8
+    paths:
+      - node_modules/
