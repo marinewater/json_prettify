@@ -28,7 +28,7 @@ async function main(): Promise<void> {
 
     let spaces = parseInt( argv.spaces as string, 10 );
     if ( isNaN( spaces ) ) {
-        spaces = 4;
+        spaces = undefined;
     }
 
     const output = new Output( jsonPrettify( json, spaces ), argv.out as string );
