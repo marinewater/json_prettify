@@ -16,9 +16,11 @@ async function main(): Promise<void> {
         .command( 'spaces', 'amount of spaces for indentation', {
             number: {
                 alias: 's',
-                default: 4
+                default: '4'
             }
         })
+        .help('h')
+        .alias('h', 'help')
         .argv;
 
     const input = new Input( argv._.length > 0 ? argv._[ 0 ] : null );
