@@ -32,6 +32,7 @@ test_node12:
     - npm install
   script:
     - npm run test
+    - npm run report-coverage
   cache:
     key: ${CI_COMMIT_REF_SLUG}-node12
     paths:
