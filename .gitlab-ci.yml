@@ -13,10 +13,19 @@ build:
     key: ${CI_COMMIT_REF_SLUG}
     paths:
       - node_modules/
+  artifacts:
+    paths:
+      - lib/*.js
+      - lib/*.js.map
+      - index.js
+      - index.js.map
+    expire_in: 1 week
 
 test_node12:
   image: node:12
   stage: test
+  dependencies:
+    - build
   before_script:
     - npm install
   script:
@@ -25,10 +34,16 @@ test_node12:
     key: ${CI_COMMIT_REF_SLUG}-node12
     paths:
       - node_modules/
+  artifacts:
+    paths:
+      - web/dist/
+    expire_in: 1 week
 
 test_node10:
   image: node:10
   stage: test
+  dependencies:
+    - build
   before_script:
     - npm install
   script:
@@ -41,6 +56,8 @@ test_node10:
 test_node8:
   image: node:8
   stage: test
+  dependencies:
+    - build
   before_script:
     - npm install
   script:
