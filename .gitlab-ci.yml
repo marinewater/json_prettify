@@ -17,6 +17,8 @@ build:
     paths:
       - lib/*.js
       - lib/*.js.map
+      - test/*.js
+      - test/*.js.map
       - index.js
       - index.js.map
     expire_in: 1 week
@@ -34,10 +36,6 @@ test_node12:
     key: ${CI_COMMIT_REF_SLUG}-node12
     paths:
       - node_modules/
-  artifacts:
-    paths:
-      - web/dist/
-    expire_in: 1 week
 
 test_node10:
   image: node:10
