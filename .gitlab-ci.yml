@@ -49,11 +49,3 @@ test_node8:
     - npm install
   script:
     - npm run test
-
-test_node6:
-  image: node:6
-  stage: test
-  before_script:
-    - npm install
-  script:
-    - npm run test
