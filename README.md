@@ -9,19 +9,30 @@
 
 Takes javascript objects in any notation and converts them to proper JSON with indendation.
 
-## Installation
+For example:
+```shell
+$ echo "{foo: 'bar',n:3}" | json_prettify
 ```
+Output:
+```json
+{
+    "foo": "bar",
+    "n": 3
+}
+```
+## Installation
+```shell
 npm install -g json_prettify
 ```
 
 ## Usage
-```
+```shell
 json_prettify file.json <options>
 ```
 
 or
 
-```
+```shell
 cat file.json | json_prettify <options>
 ```
 
