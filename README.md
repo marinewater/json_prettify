@@ -22,18 +22,18 @@ Output:
 ```
 ## Installation
 ```shell
-npm install -g json_prettify
+$ npm install -g json_prettify
 ```
 
 ## Usage
 ```shell
-json_prettify file.json <options>
+$ json_prettify file.json <options>
 ```
 
 or
 
 ```shell
-cat file.json | json_prettify <options>
+$ cat file.json | json_prettify <options>
 ```
 
 ### Options
